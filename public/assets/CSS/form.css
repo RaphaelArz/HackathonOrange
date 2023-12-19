@@ -1,0 +1,61 @@
+.container {
+    background-color: rgb(14, 57, 152); /* Fond blanc avec 50% d'opacité */
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px 20px 35px 20px;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    background-color: #31ab24;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;
+    transition: all 0.2s;
+}
+
+.form:focus {
+    background-color: #214a91;
+    transform: scale(1.025);
+    box-shadow: 0 0 2px 2px #669da0;
+    outline: none;
+}
+
+button, input[type="button"], input[type="submit"] {
+    background-color: #0a6912;
+    color: #19790d;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.btnSauvegarder,
+.btnRetour,
+.btnSupprimer {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 16px;
+}
+.btnSauvegarder {
+    background-color: #048104;
+}
+.btnSupprimer {
+    background-color: #c40f0f;
+    margin-bottom: 0;
+}
+.btnRetour {
+    background-color: #0837ab;
+}

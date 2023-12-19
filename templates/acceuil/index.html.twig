@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/assets/CSS/accueil.css">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <img id="logo" src="assets/images/logoHelpOrt.png">
+
+        <h1 style="margin-top: 90px;">Bienvenue sur EquiWell</h1>
+
+        <p style="margin-top: 20px;">Choisissez une option :</p>
+
+        <div class="button-container">
+            <a class="button" href="/register">Inscription</a>
+            <a class="button" href="/login">Connexion</a>
+        </div>
+
+    </div>
+
+{% endblock %}

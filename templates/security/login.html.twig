@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/assets/CSS/connexion.css">
+{% endblock %}
+
+
+
+
+{% block body %}
+
+    <div class="container">
+
+
+        <form method="post">
+
+            {% if error %}
+                <div class="error">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+
+            <h1 id="h1page">Page de connexion</h1>
+
+            <div class="form-group">
+
+                <input type="email" placeholder="Adresse Email" value="{{ last_username }}" name="email"
+                       id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+
+                <input type="password" placeholder="Mot de passe" name="password" id="inputPassword"
+                       class="form-control" autocomplete="current-password" required>
+
+
+                <input id="btnConnexion" type='submit' name="btnInscrire" value='Se connecter'>
+            </div>
+
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+        </form>
+    </div>
+
+{% endblock %}

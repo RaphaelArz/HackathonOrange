@@ -1,0 +1,140 @@
+.navbar {
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #004651;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 1;
+    margin-bottom: 20px;
+
+}
+
+.navbar-logo {
+    margin: -10px auto -10px 0;
+    height: 59px
+}
+
+#navbar-toggle-button {
+    height: 39.2px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item.active {
+    background-color: #2f6272;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.navbar-link {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #aaa;
+}
+
+.navbar-toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+
+}
+
+.navbar-toggle-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+#btnProfil {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    filter: invert(1);
+}
+
+
+/* Style pour le dropdown */
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    /*left: 700px;; défini dans le JS*/
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+}
+.dropdown-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 5px;
+}
+.dropdown-menu a:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navbar-menu.show {
+        gap: 10px;
+        max-height: 300px;
+        padding: 20px 0 0;
+    }
+
+    .navbar-item {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .navbar-menu.show .navbar-item {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.2s;
+    }
+
+    .navbar-toggle-button {
+        display: block;
+    }
+}
+

@@ -1,0 +1,52 @@
+table {
+    z-index: 1;
+    position: relative;
+    margin: 0 auto 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    width: 70%;
+    background-color: #f4fcf4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    & th {
+        background-color: #062949;
+        color: white;
+        padding: 15px;
+        line-height: 2;
+    }
+    & td {
+        padding: 10px;
+        line-height: 2;
+    }
+}
+
+
+#btnVoir {
+    background-color: #0837ab;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#btnEditer {
+    background-color: #c40f0f;
+}
+#btnNew {
+    background-color: #048104;
+}
+
+.btnActions {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+
+#hautDroit{
+    border-top-right-radius: 10px; /* Coin en haut à droite arrondi */
+}
+#hautGauche{
+    border-top-left-radius: 10px; /* Coin en haut à droite arrondi */
+}
