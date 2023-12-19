@@ -18,7 +18,7 @@ body {
 #h1page {
     margin-top: 90px;
     margin-bottom: 10px;
-    color: #EDE9FE;
+    color: #062947;
 }
 
 #logo {
@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-    background-color: rgb(13, 32, 119); /* Fond blanc avec 50% d'opacité */
+    background-color: rgb(185, 232, 223); /* Fond blanc avec 50% d'opacité */
     max-width: 400px;
     margin: 150px auto;
     padding: 20px 20px 35px 20px;
@@ -76,7 +76,7 @@ body {
 
 #btnConnexion,
 #btnReinitialiser {
-    background-color: #2fa40d;
+    background-color: #062948;
     color: white;
     font-size: 18px;
     cursor: pointer;
@@ -88,7 +88,7 @@ body {
 #btnConnexion:hover,
 #btnReinitialiser:hover {
     transform: scale(1.02);
-    background-color: #2fa40d;
+    background-color: #073154;
 }
 
 
